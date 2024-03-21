@@ -1,0 +1,85 @@
+.home-container{
+    background-image: url(../pages/good.jpeg);
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+
+    .third-division{
+        background-color :#ddd;
+        width: 30%;
+        height: 90%;
+        border-radius: 50%;
+        border:  2px solid rgb(19, 106, 236);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .second-division{
+            background-color: rgb(68, 128, 219);
+            border-radius: 50%;
+            width: 90%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .first-division{
+                background-color: rgba(93, 160, 5, 0.63);
+                border-radius: 50%;
+                width: 70%;
+                height: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .home{
+        width: 60%;
+        padding: 2rem;
+        text-align: center;
+        background-color: rgba(26, 82, 26, 0.534);
+        border:  1.5px solid rgb(68, 128, 219);
+        border-radius: 7px;
+
+        h1{
+            font-size: 1.6rem;
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+        p{
+            font-size: 1.2rem;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(9, 9, 177);
+            
+        }
+
+        .linj{
+             display: flex;
+             justify-content: center;
+             padding-top: 4rem;
+
+             .linksa{
+                text-decoration: none;
+                font-family: 'Courier New', Courier, monospace;
+                color: #fff;
+             }
+        }
+    }
+}

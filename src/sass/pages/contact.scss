@@ -1,0 +1,130 @@
+
+.conatct-container{
+     background-color: #fbfbfcdf;
+     padding-bottom: 2rem;
+     
+     h2{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: normal;
+     }
+
+     .fom-conto{
+        display: flex;
+        justify-content: space-around;
+        padding: 0rem 3rem;
+        
+
+
+          .par{
+            padding: 2rem;
+            background-color: #ddd;
+
+            p{
+                font-size: 1.6rem;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 800;
+            }
+            @media(max-width:908px){
+                p{
+                    font-size: 1rem; 
+                }
+            }
+
+            .icon-deff{
+                display: flex;
+                justify-content: space-around;
+
+                .icon-bar{
+                    width: 50px;
+                    background-color: rgb(0, 38, 255);
+                    height: 50px;
+                    border-radius: 3px;
+
+                    .icon{
+                        width: 40px;
+                        height: 40px;
+                        background-color: black;
+                        border-radius: 2px;
+
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            @media(max-width:416px){
+                .icon-deff{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 1rem;
+                }
+            }
+          }
+          @media(max-width:416px){
+            .par{
+                width: 100%;
+            }
+          }
+
+     }
+     @media(max-width:570px){
+        .fom-conto{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+     }
+
+     form{
+        background-color: rgb(22, 98, 185);
+        padding: 2rem;
+        border-radius: 0.5rem;
+
+        h1{
+            font-size: 1.4rem;
+        }
+
+        .field{
+            border-bottom: 1px solid #fff;
+            margin-bottom:10px ;
+        }
+
+        label input{
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: rgb(22, 98, 185);
+            font-size: 15px;
+            padding: 5px;
+            color: #fff;
+        }
+
+        textarea{
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: rgb(22, 98, 185);
+            color:#fff;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+
+            button{
+                width: 100%;
+                font-size: 1.1rem;
+                border-radius: 3px;
+                outline: none;
+
+                &:hover{
+                    background-color: rgba(93, 160, 5, 0.63);
+                }
+            }
+           
+        }
+     }
+}
+

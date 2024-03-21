@@ -1,0 +1,128 @@
+ [
+    {
+        "_id": "658d68f2392bf41123785832",
+        "productname": "Kigoli",
+        "quolity": "A",
+        "price": 1200,
+        "proDate": "2/kanama/2020",
+        "expDate": "10/kanama/2028",
+        "descliption": "Welcome to buy this product",
+        "quantityAvailable": 19478,
+        "images": [
+            "https://www.naijanews.com/wp-content/uploads/2016/11/capture4-1.jpg.webp"
+        ],
+        "likes": 0,
+        "dislikes": 0,
+        "comments": [],
+        "postAt": "2023-12-28T12:20:54.259Z",
+        "__v": 0
+    },
+    {
+        "_id": "658d6b02392bf41123785834",
+        "productname": "Fashingabo",
+        "quolity": "A",
+        "price": 1200,
+        "proDate": "4/kamene/2018",
+        "expDate": "10/kanama/2023",
+        "descliption": "Welcome to buy this product",
+        "quantityAvailable": 19478,
+        "images": [
+            "https://guardian.ng/wp-content/uploads/2018/02/Abakaliki-rice.jpg"
+        ],
+        "likes": 0,
+        "dislikes": 0,
+        "comments": [],
+        "postAt": "2023-12-28T12:20:54.259Z",
+        "__v": 0
+    },
+    {
+        "_id": "658d6bb7392bf41123785836",
+        "productname": "Packstani",
+        "quolity": "A",
+        "price": 1200,
+        "proDate": "4/ukuboza/2023",
+        "expDate": "10/ukuboza/2026",
+        "descliption": "Welcome to buy this product",
+        "quantityAvailable": 19478,
+        "images": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBKowUd1dk9vKFWvARHkqEAi37eNldY2aJMQ&usqp=CAU"
+        ],
+        "likes": 0,
+        "dislikes": 0,
+        "comments": [],
+        "postAt": "2023-12-28T12:20:54.259Z",
+        "__v": 0
+    },
+    {
+        "_id": "658d6c37392bf41123785838",
+        "productname": "Tayilandi",
+        "quolity": "A",
+        "price": 1100,
+        "proDate": "4/mutarama/2023",
+        "expDate": "10/ukuboza/2027",
+        "descliption": "Welcome to buy this product",
+        "quantityAvailable": 19478,
+        "images": [
+            "https://cdn.businessday.ng/2022/10/Price-of-bags-rice.jpg"
+        ],
+        "likes": 0,
+        "dislikes": 0,
+        "comments": [],
+        "postAt": "2023-12-28T12:20:54.259Z",
+        "__v": 0
+    },
+    {
+        "_id": "658d6c8f392bf4112378583a",
+        "productname": "Umuremure",
+        "quolity": "A",
+        "price": 1100,
+        "proDate": "4/gashyantare/2023",
+        "expDate": "10/gashyantare/2027",
+        "descliption": "Welcome to buy this product",
+        "quantityAvailable": 19478,
+        "images": [
+            "https://www.naijanews.com/wp-content/uploads/2016/11/capture4-1.jpg.webp"
+        ],
+        "likes": 0,
+        "dislikes": 0,
+        "comments": [],
+        "postAt": "2023-12-28T12:20:54.259Z",
+        "__v": 0
+    },
+    {
+        "_id": "658d6d47392bf4112378583c",
+        "productname": "Bisumati",
+        "quolity": "A",
+        "price": 900,
+        "proDate": "1/mata/2009",
+        "expDate": "10/mata/2024",
+        "descliption": "Welcome to buy this product",
+        "quantityAvailable": 19478,
+        "images": [
+            "https://distributionlovaf.ca/cdn/shop/files/rn-image_picker_lib_temp_7c93fe87-262a-4ee7-ba3f-a91e2f58e114_1024x1024.png?v=1695837238"
+        ],
+        "likes": 0,
+        "dislikes": 0,
+        "comments": [],
+        "postAt": "2023-12-28T12:20:54.259Z",
+        "__v": 0
+    },
+    {
+        "_id": "658d6e13392bf4112378583f",
+        "productname": "Shindani",
+        "quolity": "A",
+        "price": 900,
+        "proDate": "1/gicurasi/2009",
+        "expDate": "10/gicurasi/2024",
+        "descliption": "Welcome to buy this product",
+        "quantityAvailable": 19478,
+        "images": [
+            "https://asian-veggies.com/cdn/shop/files/shrimprice_f81ef358-0247-4f8b-a6a8-d6990b20da08_1200x1200.png?v=1682821239"
+        ],
+        "likes": 0,
+        "dislikes": 0,
+        "comments": [],
+        "postAt": "2023-12-28T12:20:54.259Z",
+        "__v": 0
+    }
+]

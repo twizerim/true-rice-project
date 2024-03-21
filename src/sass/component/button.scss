@@ -1,0 +1,18 @@
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    button{
+        padding: 0.6rem  1rem;
+        background-color: rgb(19, 106, 236);
+        border-radius: 0.5rem;
+        color: #fff;
+
+        &:hover{
+            background-color: rgb(68, 128, 219);
+            transform: translate(3px , -3px);
+        }
+    }
+}
