@@ -8,6 +8,7 @@ function Login() {
     <>
     <Header/>
     <div className="login-contain">
+      <button><a href="/adminpanel">Dashboard</a></button>
        <form action="">
         <h1>Login form</h1>
            <div className="fild">
