@@ -1,35 +1,101 @@
-
-
 .login-contain{
-    background-color: rgba(93, 160, 5, 0.63);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    padding: 3rem 0rem;
+    
+}
+h1{
+    color: #4b6a9b;
+    text-align: center;
+}
+p{
+    color: #4b6a9b;
+}
+p a{
+    padding: 0rem 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+form{
+    background-color: #1e2a47;
+    width: 40%; 
     padding: 2rem;
-    border-top: 2px solid #fff;
-
-    .choose{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 2rem;
-        gap: 2rem;
-    }
-
-
-    .login-form ,.signup-form{
-        background-color: #ddd;
-        padding: 2rem;
-        width: 40%;
-        margin-left: 30%;
-        border-radius: 1rem;
-
-
-        p{
-            text-align: center;
-            font-weight: bold;
-        }
-    }
-    @media(max-width:719px){
-        .login-form ,.signup-form{
-            width: 60%;
-            margin-left: 15%;
-        }
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;  
+}
+@media(max-width:794px){
+    form{
+        width: 60%;
     }
 }
+@media(max-width:485px){
+    form{
+        width: 70%;
+    }
+}
+form .fild{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+form .fild label{
+    font-size: 1.6rem;
+    color: #4b6a9b;
+}
+@media(max-width:485px){
+    form .fild label{
+        font-size: 1rem;
+    }
+}
+#error{
+    color: red;
+}
+form .fild label input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+form .fild span{
+    padding-top: 0.5rem;
+}
+
+.addition{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:346px){
+    .addition{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+.left{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buto button{
+    width: 30%;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    outline: none;
+    border: none;
+    background-color: #0079ff;
+    color: #fff;
+}
+@media(max-width:346px){
+    .buto button{
+        width: 100%;
+    }
+}
+.signup{
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

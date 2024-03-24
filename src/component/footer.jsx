@@ -9,7 +9,7 @@ function Footer(){
       <div className="foote-container">
         <div className="fooerr">
             <div className="parr">
-               {/* <Logo/> */}
+               <h3>Rice Farmers</h3>
                 <p>hello everyOne we <span>rwangingo rice farmer</span>
                 <br />we are so happy becouse our farmer <br />is passed well 
                 we have enough tools<br /> and different amchine used to helps <br />
@@ -36,10 +36,9 @@ function Footer(){
             </ul>
            </div>
 
-           <div className="links">
-            
+           <div className="footerlink">
          <ul>
-         <h3 className="contact">contact</h3>
+         <h3 className="contact">contact</h3> 
          <i class='bx bx-home-alt-2'>&nbsp;<span>kigali</span></i><br />
          <i class='bx bxl-gmail'>&nbsp;<span>info@gmail.com</span></i><br />
          <i class='bx bx-mobile-vibration'>&nbsp;<span>(+250)798080801</span></i><br />
@@ -47,7 +46,6 @@ function Footer(){
          </ul>
            </div>
         </div>
-        <hr />
 
         
         <div className="bottom">

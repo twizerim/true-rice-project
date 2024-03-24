@@ -1,5 +1,5 @@
 .nav-container{
-    background-color: rgba(93, 160, 5, 0.63);
+    background-color: #4b6a9b;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,9 +13,9 @@
     .logo h1{
         color: white;
     }
-    @media(max-width:713px){
+    @media(max-width:921px){
         .logo h1{
-           font-size: 1.5rem;
+           font-size: 1.7rem;
         }
     }
 
@@ -36,15 +36,21 @@
                 text-decoration: none;
                 display: inline-block;
                 font-family: 'Courier New', Courier, monospace;
-                font-size: 1.3rem;
+                font-size: 1.6rem;
+                padding: 0.6rem 1rem;
                 font-weight: bold;
             }
-            @media(max-width:1071px){
+            @media(max-width:1149px){
                 .downs{
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                 }
             }
-            @media(max-width:774px){
+            @media(max-width:921px){
+                .downs{
+                    padding: 0.4rem 0.5rem;
+                }
+            }
+            @media(max-width:880px){
                 .downs{
                     display: none;
                 }
@@ -83,7 +89,7 @@
             text-decoration: none;
             font-weight: bold;
             color: #fff;
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             font-family: 'Courier New', Courier, monospace;
             padding: 0.6rem 1rem;
             border-radius: 0.5rem;
@@ -106,13 +112,18 @@
                 transform: translate(-3px, 3px );
             }
         }
-        @media(max-width:1071px){
+        @media(max-width:1149px){
             .link{
-                font-size: 1rem;
+                font-size: 1.2rem;
                 padding-left: 0;
             } 
         }
-        @media(max-width:774px){
+        @media(max-width:921px){
+            .link{
+                padding: 0.4rem 0.5rem;
+            }
+        }
+        @media(max-width:880px){
             .link{
                 display: none;
             }
@@ -122,7 +133,7 @@
             display: none;
             color: #fff;
         }
-        @media(max-width:774px){
+        @media(max-width:880px){
             .menu-icon{
                 display: block;
             }

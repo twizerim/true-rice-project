@@ -12,12 +12,14 @@ return (
     <Navbar/>
      <div className="home-container">
 
-        <div className="third-division">
+        <div className="leftside">
+          <div className="third-division">
             <div className="second-division">
                 <div className="first-division">
                     <img src={igiseke} alt="agaseke" />
                 </div>
             </div>
+          </div>
         </div>
 
         <div className="home">

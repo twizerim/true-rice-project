@@ -8,12 +8,12 @@ function Navbar(){
         <>
            <div className="nav-container">
                  <div className="logo">
-                    <h1>R R Farmer</h1>
+                   <h1>R R Farmer</h1>
                  </div>
                 <ul className="links">
                     <Link to="/" className="link">Wellcome</Link>
                     <Link to="/about" className="link">About-us</Link>
-                    <Link to="/" className="link">Product</Link>
+                    <Link to="/product" className="link">Product</Link>
                     <div className="dropdown">
                     <Link to="/#" className="downs">Impact</Link>
                          <div className="subdropdown">

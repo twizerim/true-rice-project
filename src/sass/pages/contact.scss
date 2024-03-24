@@ -1,29 +1,31 @@
 
 .conatct-container{
      background-color: #fbfbfcdf;
-     padding-bottom: 2rem;
+     height: 80vh;
+    padding: 3rem;
      
      h2{
         text-align: center;
-        font-family: 'Courier New', Courier, monospace;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         letter-spacing: normal;
+        font-size: 2rem;
      }
 
      .fom-conto{
         display: flex;
         justify-content: space-around;
-        padding: 0rem 3rem;
         
 
 
           .par{
             padding: 2rem;
-            background-color: #ddd;
+            width: 40%;
 
             p{
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 font-family: 'Courier New', Courier, monospace;
                 font-weight: 800;
+                color: #4b6a9b;
             }
             @media(max-width:908px){
                 p{
@@ -44,7 +46,7 @@
                     .icon{
                         width: 40px;
                         height: 40px;
-                        background-color: black;
+                        background-color:black;
                         border-radius: 2px;
 
 
@@ -59,17 +61,19 @@
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
                     gap: 1rem;
+                    margin-left: 2rem;
                 }
             }
           }
-          @media(max-width:416px){
+          @media(max-width:573px){
             .par{
-                width: 100%;
+                width: 70%;
+                padding: 0.3rem;
             }
           }
 
      }
-     @media(max-width:570px){
+     @media(max-width:573px){
         .fom-conto{
             display: flex;
             flex-direction: column;
@@ -78,9 +82,10 @@
      }
 
      form{
-        background-color: rgb(22, 98, 185);
+        background-color: #d5dcf2;
         padding: 2rem;
         border-radius: 0.5rem;
+        width: 50%;
 
         h1{
             font-size: 1.4rem;
@@ -95,18 +100,18 @@
             width: 100%;
             border: none;
             outline: none;
-            background-color: rgb(22, 98, 185);
+            background-color: #d5dcf2;
             font-size: 15px;
             padding: 5px;
-            color: #fff;
+            color: #0f0e0e;
         }
 
         textarea{
             width: 100%;
             border: none;
             outline: none;
-            background-color: rgb(22, 98, 185);
-            color:#fff;
+            background-color: #d5dcf2;
+            color:#0e0e0e;
         }
 
         .button{
@@ -126,5 +131,29 @@
            
         }
      }
+     @media(max-width:573px){
+        form{
+            width: 70%;
+        }
+    }
+    @media(max-width:416px){
+        .fom-conto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media(max-width:573px){
+    .conatct-container{
+        height:  auto;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.4rem;
+    }
 }
 
