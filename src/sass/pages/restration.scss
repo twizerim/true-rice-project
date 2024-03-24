@@ -1,5 +1,5 @@
 .contaier{
-    background-color: rgb(68, 128, 219);
+    background-color: #f6f8ff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,30 +25,43 @@
 
 
     form{
-        background-color: #fff;
+        background-color: #fefefe;
         width: 55%;
-        padding: 2rem;
+        padding: 2rem 1rem;
         border-radius: 0.6rem;
 
 
         .flex{
             display: flex;
             justify-content: space-between;
+            width: 100%;
 
 
             .division1{
                 .groupe{
-                    padding-bottom: 1rem;
+                    padding-bottom: 2rem;
+                    label{
+                        color: #4b6a9b;
+                    }
                     label input{
-                        width: 100%;
+                        width: 50%;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1.3px solid black;
                     }
                 }
             }
             .division2{
                 .groupe{
-                    padding-bottom: 1rem;
+                    padding-bottom: 2rem;
+                    label{
+                        color: #4b6a9b;
+                    }
                     label input{
-                        width: 100%;
+                        width: 70%;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1.3px solid black;
                     }
                 }
             }
