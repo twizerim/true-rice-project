@@ -1,0 +1,86 @@
+.admin-contaner{
+    margin: 0;
+    display: flex;
+}
+nav{
+    padding: 1.7rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: right;
+}
+.bitenav{
+    background-color: black;
+    padding: 1rem;
+}
+.bitenav .white{
+    color: #fff;
+    font-size: 2rem;
+    background-color: #ddd;
+}
+.navigate{
+    background-color: #c70000;
+    margin: 0;
+    height: 100vh;
+    width: 20%;
+    left: o;
+    top: 0;
+    scroll-behavior: smooth;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.activities{
+    background-color: #fff;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ddd;
+    top: 0;
+    position: sticky;
+    scroll-behavior: smooth;
+    z-index: 9999;
+    position: -webkit-sticky;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+.card{
+    background-color: rgb(34, 33, 33);
+    padding: 2rem;
+    color:white;
+}
+li{
+    display: flex;
+}
+.lod{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.linksadmin{
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 3rem;
+}
+.loge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loge img{
+    width: 70px;
+    border-radius: 50%;
+}
+.loge  h1{
+    font-size: 1rem;
+}

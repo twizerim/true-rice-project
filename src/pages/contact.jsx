@@ -17,31 +17,19 @@ export default function Contact(){
            ...formData,[e.target.name]:e.target.value
         })
     }
-    const datas={
-        firstname:formData.firstname,
-        lastname:formData.lastname,
-        email:formData.email,
-        phone:formData.phone,
-        message:formData.message
-    }
-    console.log(datas)
-
+    
     const Handlecontact = async (e) =>{
         e.preventDefault();
 
 
         try {
-           const Apicontact="http://localhost:3000/groupe/contact-us/"
-           const response = await axios.post(Apicontact,
-            {
-                headers:{'Content-Type':'application/json'}
-            }
-            )
-           if(response){
-             alert(response.data.message)
-           }else{
-             console.log("message wapi")
-           }
+        const api = "http://localhost:3000/groupe/contact-us";
+         const response = await axios.post(api, formData, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      alert(response.data.message)
             
         } catch (error) {
             console.log(error)
