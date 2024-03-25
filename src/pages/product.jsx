@@ -3,6 +3,7 @@
 import Cards from "../component/cards"
 import '../sass/main.scss'
 import Header from "../component/header"
+import Footer from "../component/footer"
 
 
 const Productpage = () =>{
@@ -11,8 +12,13 @@ const Productpage = () =>{
         <Header/>
         <div className="product-container">
           <Cards/>
+          <Cards/>
+          <Cards/>
+          <Cards/>
+          <Cards/>
+          <Cards/>
         </div>
-         
+         <Footer/>
         </>
     )
 }
