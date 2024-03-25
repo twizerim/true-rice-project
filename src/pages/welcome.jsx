@@ -11,7 +11,6 @@ return (
     <>
     <Navbar/>
      <div className="home-container">
-
         <div className="leftside">
           <div className="third-division">
             <div className="second-division">
