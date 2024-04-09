@@ -1,97 +1,29 @@
 .home-container{
-    background-image: url(../pages/good.jpeg);
+    background-image: url(../pages/backgrund.jpg);
     height: 65vh;
     background-repeat: no-repeat;
-    background-position: center;
+    // background-position:right;
     background-size: cover;
     object-fit: cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 85vh;
 
-h1{
-    color: #000;
-}
-    
-    .third-division{
-        margin-left: 3rem;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        background-color :#ddd;
-        width: 100%;
-        height: 65%;
-        border-radius: 50%;
-        border:  2px solid rgb(19, 106, 236);
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .second-division{
-            background-color: rgb(68, 128, 219);
-            border-radius: 50%;
-            width: 90%;
-            height: 90%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-
-            .first-division{
-                background-color: rgba(93, 160, 5, 0.63);
-                border-radius: 50%;
-                width: 70%;
-                height: 90%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img{
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                }
-            }
-        }
-    }
-    @media(max-width:1048px){
-        .third-division{
-            height: 55%;
-        }
-    }
-    @media(max-width:786px){
-        .third-division{
-            margin-bottom: 1.8rem;
-            margin-left: 2rem;
-            margin-top: 2rem;
-            width: 70%;
-        }
-    }
-    @media(max-width:499px){
-        .third-division{
-            margin-bottom: 1.8rem;
-            margin-left: 2.5rem;
-            width: 60;
-            
-        }
-    }
-
     .home{
-        width: 50%;
+        width: 30%;
         padding: 2rem 3rem;
         text-align: center;
-        background-color: #697c9a;
-        border:  1.5px solid rgb(68, 128, 219);
         border-radius: 7px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
 
         h1{
-            font-size: 1.6rem;
-            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.8rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #fff;
+            text-align: center;
             
         }
         @media(max-width:434px){
@@ -100,10 +32,10 @@ h1{
             }
         }
         p{
-            font-size: 1.4rem;
-            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.6rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: #fefefe;
-            font-weight: 600;
+            font-weight:600;
             
         }
         @media(max-width:434px){
@@ -113,15 +45,17 @@ h1{
         }
 
         .linj{
-             display: flex;
-             justify-content: center;
-             padding-top: 2rem;
-
              .linksa{
                 text-decoration: none;
                 font-family: 'Courier New', Courier, monospace;
                 color: #fff;
                 font-weight: 500;
+                display: flex;
+                justify-content: center;
+                flex-direction:column-reverse;
+             }
+             .musi{
+                 font-size: 1.3rem;
              }
         }
     }

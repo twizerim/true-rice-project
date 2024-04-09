@@ -10,12 +10,8 @@ const Productpage = () =>{
     return (
         <>
         <Header/>
+        <h1>This is the product availabe to buy</h1>
         <div className="product-container">
-          <Cards/>
-          <Cards/>
-          <Cards/>
-          <Cards/>
-          <Cards/>
           <Cards/>
         </div>
          <Footer/>

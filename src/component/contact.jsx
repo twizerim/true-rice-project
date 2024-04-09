@@ -1,6 +1,4 @@
 import React,{useState} from "react";
-import Footer from "../component/footer";
-import Header from "../component/header"
 import tuiter from "../assets/image/twiter.png"
 import watap from "../assets/image/whatapp.png"
 import email from "../assets/image/email.png"
@@ -38,7 +36,6 @@ export default function Contact(){
     return(
 
         <>
-        <Header/>
            <div className="conatct-container"> 
                      <h2 className="hello">have some questions</h2>
                 <div className="fom-conto">
@@ -105,7 +102,6 @@ export default function Contact(){
 
                 </div>
            </div>
-           <Footer/>
         </>
 
     )

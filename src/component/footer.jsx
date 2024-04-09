@@ -39,10 +39,10 @@ function Footer(){
            <div className="footerlink">
          <ul>
          <h3 className="contact">contact</h3> 
-         <i class='bx bx-home-alt-2'>&nbsp;<span>kigali</span></i><br />
-         <i class='bx bxl-gmail'>&nbsp;<span>info@gmail.com</span></i><br />
-         <i class='bx bx-mobile-vibration'>&nbsp;<span>(+250)798080801</span></i><br />
-         <i class='bx bx-phone'>&nbsp;<span>(+250)0783531566</span></i>
+         <i className='bx bx-home-alt-2'>&nbsp;<span>kigali</span></i><br />
+         <i className='bx bxl-gmail'>&nbsp;<span>info@gmail.com</span></i><br />
+         <i className='bx bx-mobile-vibration'>&nbsp;<span>(+250)798080801</span></i><br />
+         <i className='bx bx-phone'>&nbsp;<span>(+250)0783531566</span></i>
          </ul>
            </div>
         </div>
@@ -53,9 +53,9 @@ function Footer(){
            <h6> &copy; 2023 coppyright rwangingo rice farmer.com</h6>
           </div>
           <div className="cont">
-          <i class='bx bxl-facebook'></i>
-          <i class='bx bxl-google-plus'></i>
-          <i class='bx bxl-linkedin'></i>
+          <i className='bx bxl-facebook'></i>
+          <i className='bx bxl-google-plus'></i>
+          <i className='bx bxl-linkedin'></i>
           </div>
         </div>
       </div>

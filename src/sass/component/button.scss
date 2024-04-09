@@ -6,12 +6,13 @@
 
     button{
         padding: 0.6rem  1rem;
-        background-color: rgb(19, 106, 236);
+        background-color: rgb(249, 233, 6);
         border-radius: 0.5rem;
-        color: #fff;
+        color: #070707;
+        font-weight: 700;
 
         &:hover{
-            background-color: rgb(68, 128, 219);
+            background-color: rgba(239, 231, 111, 0.488);
             transform: translate(3px , -3px);
         }
     }

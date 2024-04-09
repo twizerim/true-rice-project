@@ -1,0 +1,54 @@
+.table-container{
+    background-color:#f6f8ff;
+    width: 60%;
+    border-radius: 0.5rem;
+
+
+
+    .navtable{
+        background-color: #4b6a9b;
+        padding: 3px;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        text-align: center;
+
+    }
+
+    .defferentperson{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .oneperson{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.4rem 1rem;
+            border-bottom: 1px solid #4b6a9b;
+
+
+            .changes{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+
+                .edit{
+                    color: green;
+                    font-weight: 700;
+                }
+                .delete{
+                    color: red;
+                    font-weight: 700;
+                }
+            }
+            .li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
+
+        }
+    }
+}

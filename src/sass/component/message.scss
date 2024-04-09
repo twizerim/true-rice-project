@@ -1,0 +1,29 @@
+.message-contaner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+
+    .message{
+        width: 100%;
+        border-bottom: 1px solid #4b6a9b;
+        padding: 1.5rem 1rem;
+        background-color:#f6f8ff;
+
+            h2{
+                font-size: 1.3rem;
+                text-align: right;
+                padding-right: 2rem;
+            }
+            p{
+                font-size: 1.5rem;
+                font-weight: 900;
+            }
+            span{
+                font-size: 1.2rem;
+                color: black;
+            }
+    }
+}
