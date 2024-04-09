@@ -2,19 +2,19 @@
     background-image: url(../pages/backgrund.jpg);
     height: 65vh;
     background-repeat: no-repeat;
-    // background-position:right;
     background-size: cover;
     object-fit: cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    height: 85vh;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
 
     .home{
-        width: 30%;
-        padding: 2rem 3rem;
+        width: 40%;
+        padding: 2rem;
         text-align: center;
-        border-radius: 7px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -24,7 +24,14 @@
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: #fff;
             text-align: center;
+            width: 100%;
             
+        }
+        @media(max-width:831px){
+            h1{
+                font-size: 2rem;
+               
+               }
         }
         @media(max-width:434px){
             h1{
@@ -37,6 +44,11 @@
             color: #fefefe;
             font-weight:600;
             
+        }
+        @media(max-width:831px){
+            p{
+                font-size: 1.3rem;
+               }
         }
         @media(max-width:434px){
             p{
@@ -59,23 +71,58 @@
              }
         }
     }
-    @media(max-width:786px){
+    @media(max-width:1012px){
         .home{
-            width: 80%;
+            width: 50%;
         }
     }
-    @media(max-width:786px){
+    @media(max-width:831px){
         .home{
-            width: 75%;
-            padding: 1.4rem 2rem;
+            width: 65%;
+            padding: 1.4rem
         }
     }
-    @media(max-width:311px){
+    @media(max-width:523px){
         .home{
-            width: 70%;
-            padding: 1rem 1.3rem;
+            width: 90%;
+            padding: 2rem 0rem;
         }
     }
+
+    .awards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding-bottom: 2rem;
+
+        .award-flex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            gap: 1rem;
+            
+
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            h3{
+                color: black;
+                font-weight: bold;
+            }
+    
+        }
+    }
+    @media(max-width:907px){
+        .award-flex{
+           gap: 0;
+        }
+    }
+  
 }
 @media(max-width:786px){
     .home-container{

@@ -19,9 +19,9 @@ p a{
     text-decoration: none;
 }
 form{
-    background-color: #1e2a47;
+    background-color: #F6F8FF;
     width: 80%; 
-    padding: 2rem;
+    padding: 1rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;  
 }
@@ -40,7 +40,7 @@ form .fild{
     padding-bottom: 1rem;
 }
 form .fild label{
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: #4b6a9b;
 }
 @media(max-width:485px){
@@ -53,7 +53,7 @@ form .fild label{
 }
 form .fild label input{
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.6rem;
     padding: 0.3rem;
 }
 form .fild span{

@@ -40,10 +40,9 @@ export default function Contact(){
                      <h2 className="hello">have some questions</h2>
                 <div className="fom-conto">
                     <div className="par">
-                       <p>Hello every one, we are <span>Rwangingo Rice Farmers</span> 
-                        <br /><br />We  are so happy because our cooperative <br /><br />its works in 
-                         coperation and we work hard,<br /><br />
-                        So if you want to sends us your message and you can <br /><br /> 
+                       <p>Hello every one, we are Rwangingo Rice Farmers 
+                        We  are so happy because our cooperativeits works in  coperation and we work hard
+                        So if you want to sends us your message and you can  
                         </p>
                         <div className="icon-deff">
                             <div className="icon-bar">
