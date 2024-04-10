@@ -7,6 +7,7 @@ import BrowserUpdatedTwoToneIcon from '@mui/icons-material/BrowserUpdatedTwoTone
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import logoimage from "../assets/agri-log.png"
 import Login from "./login"
+import Signup from "./signup";
 
 
 
@@ -16,17 +17,33 @@ function Navbar(){
     const [form , setForm]=useState(false)
     const [hidform , setHideform] =useState(false)
     const [showform , setshowform] =useState(true)
+    const [signup,setSignup]=useState(false)
+    const [login ,setLogin]=useState(true)
 
     const Handleshowform = () =>{
         setForm(true)
         setHideform(true)
         setshowform(false)
+        setIsMobile(false)
     }
     const Handlehideform = () =>{
         setForm(false)
         setHideform(false)
         setshowform(true)
     }
+      const Mobile = ()=>{
+        setIsMobile(true)
+        setForm(false)
+      }
+
+      const Signupp = () =>{
+        setSignup(true)
+        setLogin(false)
+      }
+      const Loging = () =>{
+        setSignup(false)
+        setLogin(true)
+      }
 
 
 
@@ -34,7 +51,7 @@ function Navbar(){
         <>
            <div className="nav-container">
                  <div className="logo">
-                   <AlignRightOutlined className="icon" onClick = {()=>setIsMobile(!isMobile)}/>
+                   <AlignRightOutlined className="icon" onClick = {Mobile}/>
                    <img src={logoimage} alt="" />
                  </div>
                  <div className="regist">
@@ -52,9 +69,10 @@ function Navbar(){
             {form && (
                 <div className="login-sginup">
                 <div className="chosehead">
-                    <p>Sign up</p> <span>Login</span>
+                    <p onClick={Signupp}>Sign up</p> <span onClick={Loging}>Login</span>
                 </div>
-               <Login/>
+               {login && (<Login/>)}
+               {signup && (<Signup/> )}
             </div>
             )}
             

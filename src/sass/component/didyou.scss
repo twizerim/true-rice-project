@@ -1,5 +1,8 @@
 
 .containner{
+    h1{
+        color: rgb(38, 145, 11);
+    }
     
 
     .flex-box{
@@ -10,14 +13,19 @@
         gap: 2rem;
         padding-right: 3rem;
 
+       
+
         .didyou{
             width: 400px;
 
             h2,p{
                 text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
             h2{
                 font-size: 1.3rem;
+                color: #1a1436;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
         }
 

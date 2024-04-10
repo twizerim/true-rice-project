@@ -1,6 +1,4 @@
 import React,{useState} from 'react'; 
-import Header from "../component/header"
-import Footer from "../component/footer"
 import axios from 'axios';
 
 function Signup() {
@@ -32,7 +30,6 @@ function Signup() {
 
   return (
     <>
-    <Header/>
     <div className="login-contain">
        <form action="" onSubmit={Handlecontact}>
         <h1>Sign up form</h1>
@@ -98,7 +95,6 @@ function Signup() {
 
             
   </div>
-  <Footer/>
         
     </>
   );

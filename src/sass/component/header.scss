@@ -38,12 +38,15 @@
       gap: 1rem;
       padding:  0.2rem 3rem;
       border-radius: 0.5rem;
-      background-color: rgb(253, 237, 7);
+      background-color: rgb(38, 145, 11);
       font-weight: bold;
       font-size: 1.4rem;
+      color: #fff;
+      border: none;
+      outline: none;
 
       &:hover{
-        background-color: rgb(244, 237, 135);
+        background-color: rgb(53, 239, 7);
       }
    }
    @media(max-width:402px){
@@ -151,7 +154,7 @@
     right: 0;
     margin-top: 8rem;
     width: 25%;
-    height: 100vh;
+    height: auto;
 }
 @media(max-width:1023px){
     .login-sginup{
