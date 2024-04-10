@@ -1,0 +1,25 @@
+
+.containner{
+    
+
+    .flex-box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding-right: 3rem;
+
+        .didyou{
+            width: 400px;
+
+            h2,p{
+                text-align: center;
+            }
+            h2{
+                font-size: 1.3rem;
+            }
+        }
+
+    }
+}

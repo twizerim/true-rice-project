@@ -9,6 +9,7 @@ import agence from "../assets/agence.png"
 import awards from "../assets/awards.webp"
 import harvesty from "../assets/HARVEST.webp"
 import images from "../assets/images.png"
+import Information from "../component/didyourknow";
 
 function Welcome(){
 return (
@@ -46,6 +47,7 @@ return (
             </div>
         </div>
      </div>
+     <Information/>
      <Contact/>
     <Footer/>
     </>
