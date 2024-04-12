@@ -192,15 +192,18 @@
         padding: 0rem 1.5rem;
     }
 }
- .chosehead span{
-    border-bottom: 2px solid black;
-    padding-bottom: 10px;
-    width: 50%;
-    text-align: center;
-}
 .chosehead p{
     padding-bottom: 10px;
     width: 50%;
     text-align: center;
+    color: #4b6a9b;  
+}
+.chosehead span{
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
+    color: #4b6a9b;
+}
+.active{
     border-bottom:0.5px solid #4b6a9b;
 }

@@ -8,7 +8,7 @@ import axios from "axios"
 
 
 export default function Contact(){
-    const [formData,setformData]=useState({firstname:"",lastname:"",email:"",phone:"",message:""})
+    const [formData,setformData]=useState({firstname:"",email:"",phone:"",message:""})
 
     const HandleInputcontact = (e) =>{
         setformData({
@@ -37,46 +37,22 @@ export default function Contact(){
 
         <>
            <div className="conatct-container"> 
-                     <h2 className="hello">have some questions</h2>
+                     <h2 className="hello">We're here to help.Feel free to get in touch with us.</h2>
                 <div className="fom-conto">
                     <div className="par">
-                       <p>Hello every one, we are Rwangingo Rice Farmers 
-                        We  are so happy because our cooperativeits works in  coperation and we work hard
-                        So if you want to sends us your message and you can  
-                        </p>
-                        <div className="icon-deff">
-                            <div className="icon-bar">
-                                <div className="icon">
-                                    <img src={tuiter} alt="" />
-                                </div>
-                            </div>
-                            <div className="icon-bar">
-                                <div className="icon">
-                                    <img src={watap} alt="" />
-                                </div>
-                            </div>
-                            <div className="icon-bar">
-                                <div className="icon">
-                                    <img src={email} alt="" />
-                                </div>
-                            </div>
-                            <div className="icon-bar">
-                                <div className="icon">
-                                    <img src={facebook} alt="" />
-                                </div>
-                            </div>
-                        </div>           
+                      <p>We value your questions, feedback, and inquiries</p>
+                       <h3>Lets Talk.</h3>  
+                        <p>Please fill in the details and we will be in touch shortly or send us email or call us</p>
+                        <div className="lines">
+                             <p>Gatsibo.agri@rwa.com</p>
+                             <span>+250783801966</span>
+                         </div>          
                     </div>
                     <form action="" onSubmit={Handlecontact}>
-                        <h1>Fill this form to contact us</h1>
+                        <h1>Complete The Form Below...</h1>
                         <div className="field">
                             <label htmlFor="firstname">
                                 <input type="text" name="firstname" onChange={HandleInputcontact} value={formData.firstname} placeholder="Type your first name"/>
-                            </label>
-                        </div>
-                        <div className="field">
-                            <label htmlFor="lastname">
-                                <input type="text" name="lastname" onChange={HandleInputcontact} value={formData.lastname} placeholder="Type your last name"/>
                             </label>
                         </div>
                         <div className="field">

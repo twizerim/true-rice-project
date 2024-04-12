@@ -1,5 +1,7 @@
 import React,{useState} from 'react'; 
 import axios from 'axios';
+import goo from "../assets/Googl.png"
+import face from "../assets/Faceboo.png"
 
 function Login() {
   const [formData,setformData]=useState({email:"",password:""})
@@ -67,10 +69,16 @@ function Login() {
             <div className="buto">
                <button type='submit'>Submit</button>
             </div>
-            <div className="signup">
-              <p>If you don't have account please <a href="/signup">Sign up</a></p>
-            </div>
        </form>
+       <div className="other-choice">
+           <h1>Or login with</h1>
+           <button className='google'>
+            <img src={goo} alt="" />
+            Login with Email</button>
+           <button className='facebook'>
+            <img src={face} alt="" />
+            Login with Facebook </button>
+       </div>
 
             
   </div>    

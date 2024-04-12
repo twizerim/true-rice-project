@@ -69,7 +69,8 @@ function Navbar(){
             {form && (
                 <div className="login-sginup">
                 <div className="chosehead">
-                    <p onClick={Signupp}>Sign up</p> <span onClick={Loging}>Login</span>
+                    <p onClick={Signupp} className={signup === true ? "active":""}>Sign up</p> 
+                    <span onClick={Loging}className={login === true ? "active":""}>Login</span>
                 </div>
                {login && (<Login/>)}
                {signup && (<Signup/> )}

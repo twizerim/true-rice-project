@@ -10,6 +10,7 @@ import awards from "../assets/awards.webp"
 import harvesty from "../assets/HARVEST.webp"
 import images from "../assets/images.png"
 import Information from "../component/didyourknow";
+import Background from "../component/background";
 
 function Welcome(){
 return (
@@ -48,6 +49,7 @@ return (
         </div>
      </div>
      <Information/>
+      <Background/>
      <Contact/>
     <Footer/>
     </>

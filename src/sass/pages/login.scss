@@ -104,4 +104,44 @@ form .fild span{
     justify-content: center;
     align-items: center;
 }
+.other-choice{
+    background-color: #F6F8FF;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.7rem;
+    width: 85%;
+
+
+    .google{
+        border-radius: 0.4rem;
+        border: 2px solid rgb(38, 145, 11);
+        color: #4b6a9b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .facebook{
+        border-radius: 0.4rem;
+        border: 2px solid rgb(38, 145, 11);
+        color: #4b6a9b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+
+        img{
+            width: 30px;
+            height: 20px;
+        }
+    }
+}
 

@@ -88,12 +88,7 @@ function Signup() {
             <div className="buto">
                <button type='submit'>Submit</button>
             </div>
-            <div className="signup">
-              <p>If you create account you are allowed to <a href="/login">Login now</a></p>
-            </div>
-       </form>
-
-            
+       </form>         
   </div>
         
     </>
