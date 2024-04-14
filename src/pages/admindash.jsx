@@ -65,7 +65,7 @@ function Admindashboard(){
                     <h1>Admin dash board</h1>
                     </div>
                     <div class="notifc">
-                        <button><a href="/login">Log out</a></button>
+                        <button><a href="/">Log out</a></button>
                     </div>
                 </div>
                 <div className="allactivities-controll">

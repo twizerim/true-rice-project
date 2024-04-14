@@ -1,6 +1,54 @@
+
+
 .containerback{
-    background-color: aqua;
-   h1{
-    color: #000;
-   }
+    position: relative;
+    padding-top: 5rem;
+
+
+    .imageback{
+        background-image: url(../../assets/pexeimage.jpg);
+        background-position: center;
+        background-size: cover;
+        background-clip: content-box;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       h1{
+        color: #fff;
+        font-size: 3rem;
+       }
+       @media(max-width:588px){
+         h1{
+            font-size: 2rem;
+         }
+       }
+       @media(max-width:588px){
+        h1{
+           font-size: 1rem;
+        }
+      }
+    }
+    p{
+        padding: 3rem;
+        border-radius: 50%;
+        background-color: rgb(4, 55, 20);
+        color: #fff;
+        position: absolute;
+        top: 4;
+    }
+
+    .definition{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .first{
+            .logoimage{
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
+            }
+        }
+    }
 }
