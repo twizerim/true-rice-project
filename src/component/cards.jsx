@@ -69,7 +69,7 @@ function CustomCard () {
       
       
           <div className="butt">
-            <button>buy</button>
+            <button><a href="/single">buy</a></button>
             <button onClick={handleview}>View</button>
           </div>
         </AntCard>

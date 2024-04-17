@@ -63,7 +63,20 @@
             border: none;
             font-size: 1.5rem;
         }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
      }
+   }
+   input,textarea{
+     width: 100%;
+   }
+
+   .division{
+    padding-bottom: 10px;
    }
     
 }
