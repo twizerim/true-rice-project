@@ -1,6 +1,6 @@
 
 
-import Cards from "../component/cards"
+import CustomCard from "../component/cards"
 import '../sass/main.scss'
 import Header from "../component/header"
 import Footer from "../component/footer"
@@ -12,7 +12,14 @@ const Productpage = () =>{
         <Header/>
         <h1>This is the product availabe to buy</h1>
         <div className="product-container">
-          <Cards/>
+          <CustomCard/>
+          <CustomCard/>
+          <CustomCard/>
+          <CustomCard/>
+          <CustomCard/>
+          <CustomCard/>
+          <CustomCard/>
+          <CustomCard/>
         </div>
          <Footer/>
         </>

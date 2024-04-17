@@ -83,6 +83,7 @@
     margin-top: 8rem;
     padding: 2rem;
     height: 78vh;
+    z-index: 999999;
 
     .logo{
         display: block;
@@ -155,6 +156,7 @@
     margin-top: 8rem;
     width: 25%;
     height: auto;
+    z-index: 999999;
 }
 @media(max-width:1023px){
     .login-sginup{

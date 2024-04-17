@@ -31,7 +31,6 @@
     .division,.divisio,.divisi{
       padding: 0rem 0.3rem;
       width: 250px;
-      background-color: aqua;
 
       p{
         text-align: center;
@@ -39,4 +38,46 @@
     } 
   }
   
-  }
+}
+h5{
+  padding-top: 3rem;
+  color: green;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.platforms{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+   .platfor{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    h2{
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    span{
+      text-align: center;
+    }
+    img{
+      width: 200px;
+      height: 200px;
+    }
+   }
+}
+.impactmision{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+

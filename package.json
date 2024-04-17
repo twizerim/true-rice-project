@@ -20,6 +20,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
     "sass": "^1.69.5",
     "styled-components": "^6.1.2",
     "ui": "^0.2.4",
