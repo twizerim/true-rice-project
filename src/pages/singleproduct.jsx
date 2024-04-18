@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import '../sass/main.scss';
 import Navbar from '../component/header';
 import { Image } from 'antd';
+import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import HouseSidingSharpIcon from '@mui/icons-material/HouseSidingSharp';
+
 
 function Singleproduct() {
   const [count, setCount] = useState(0);
@@ -23,7 +29,7 @@ function Singleproduct() {
         <div className="image-contain">
           <div className="image">
             <Image
-              width={500}
+              width="50%"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1oUc4hyMH-UZu-ZXFlVGUsj9VtVJsAwD0BQ&s"
             />
             <div className="calculator">
@@ -75,10 +81,28 @@ function Singleproduct() {
                 </label>
                </div>
                <div className="buyy">
-                <button>Oder now!</button>
+                <button type='submit'>Oder now!</button>
                </div>
             </form>
          </div>
+      </div>
+      <div className="parthto">
+           <div className="hone">
+           <HouseSidingSharpIcon/>
+           <Link to="/" className="link">Home</Link>
+           </div>
+           <div className="hone">
+            <ShoppingCartIcon/>
+           <Link to="/oder" className="link">My Oder</Link>
+           </div>
+           <div className="hone">
+            <ManageAccountsIcon/>
+           <Link to="/product" className="link">My Account</Link>
+           </div>
+           <div className="hone">
+            <ShoppingBasketIcon/>
+           <Link to="/product" className="link">Other product</Link>
+           </div>
       </div>
     </>
   );

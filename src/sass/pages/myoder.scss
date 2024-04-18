@@ -1,0 +1,29 @@
+.defferentoder{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    .oderflex{
+        border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+
+        .heading{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: green;
+
+            h1{
+                color: aliceblue;
+            }
+        }
+
+        .oder{
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+            border-bottom: 1px solid green;
+        }
+    }
+}

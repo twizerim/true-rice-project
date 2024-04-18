@@ -7,6 +7,7 @@ import Admindashboard from './pages/admindash';
 import Farmerdashboard from './pages/farmerdashboard';
 import Impact from './pages/impact';
 import Singleproduct from './pages/singleproduct';
+import ShowOder from './pages/odering';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/farmerpanel' element={<Farmerdashboard/>}/>
         <Route path='/impact' element={<Impact/>}/>
         <Route path='/single' element={<Singleproduct/>}/>
+        <Route path='/oder' element={<ShowOder/>}/>
       </Routes>
     </Router>
   );
