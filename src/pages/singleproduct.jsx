@@ -11,15 +11,22 @@ import HouseSidingSharpIcon from '@mui/icons-material/HouseSidingSharp';
 
 function Singleproduct() {
   const [count, setCount] = useState(0);
+
+  let available = 599999
+  const [qontity,setQuontity] = useState(available)
   let price = 200;
   let totalPrice = price * count;
+  
 
   const handleplus = () => {
     setCount(count + 1);
+    setQuontity(qontity -1)
   };
 
   const handleminus = () => {
     setCount(count - 1);
+    setQuontity(qontity +1)
+  
   };
 
   return (
@@ -42,7 +49,7 @@ function Singleproduct() {
             <h1>The name of the product</h1>
             <h2>Title of product</h2>
             <h3>Price : {price} Rwf</h3>
-            <p>Quantity available: <span>599999</span> Kg</p>
+            <p>Quantity available: <span>{qontity}</span> Kg</p>
             <span>It's better to buy this product because it supports your body</span>
             <h5 className="cost">Total cost: <span>{totalPrice} Rwf</span></h5>
           </div>
