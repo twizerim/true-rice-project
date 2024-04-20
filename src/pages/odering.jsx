@@ -21,7 +21,7 @@ function ShowOder(){
                  <div className="oder">
                     <h2>Twizerimana Gedeon</h2>
                     <h3>+25 0783801966</h3>
-                    <p>Ngarama</p>
+                    <span>Ngarama</span>
                     <span>50</span>
                     <span>5000Rwf</span>
                     <span>othar actions</span>
@@ -30,7 +30,7 @@ function ShowOder(){
                  <div className="oder">
                     <h2>Twizerimana Gedeon</h2>
                     <h3>+25 0783801966</h3>
-                    <p>Ngarama</p>
+                    <span>Ngarama</span>
                     <span>50</span>
                     <span>5000Rwf</span>
                     <span>othar actions</span>
@@ -39,7 +39,7 @@ function ShowOder(){
                  <div className="oder">
                     <h2>Twizerimana Gedeon</h2>
                     <h3>+25 0783801966</h3>
-                    <p>Ngarama</p>
+                    <span>Ngarama</span>
                     <span>50</span>
                     <span>5000Rwf</span>
                     <span>othar actions</span>
@@ -48,7 +48,7 @@ function ShowOder(){
                  <div className="oder">
                     <h2>Twizerimana Gedeon</h2>
                     <h3>+25 0783801966</h3>
-                    <p>Ngarama</p>
+                    <span>Ngarama</span>
                     <span>50</span>
                     <span>5000Rwf</span>
                     <span>othar actions</span>
@@ -57,7 +57,7 @@ function ShowOder(){
                  <div className="oder">
                     <h2>Twizerimana Gedeon</h2>
                     <h3>+25 0783801966</h3>
-                    <p>Ngarama</p>
+                    <span>Ngarama</span>
                     <span>50</span>
                     <span>5000Rwf</span>
                     <span>othar actions</span>

@@ -1,5 +1,11 @@
 import React from "react";
-// import Logo from "./logo";
+import logoimage from "../assets/agri-log.png"
+import { Link } from 'react-router-dom'
+import BungalowIcon from '@mui/icons-material/Bungalow';
+import EdgesensorHighIcon from '@mui/icons-material/EdgesensorHigh';
+import MarkEmailUnreadIcon from '@mui/icons-material/MarkEmailUnread';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 
 function Footer(){
@@ -7,56 +13,30 @@ function Footer(){
         <>
   
       <div className="foote-container">
-        <div className="fooerr">
-            <div className="parr">
-               <h3>Rice Farmers</h3>
-                <p>hello everyOne we <span>rwangingo rice farmer</span>
-                <br />we are so happy becouse our farmer <br />is passed well 
-                we have enough tools<br /> and different amchine used to helps <br />
-                us pass well our job.</p>
-            </div>
-           <div className="prdt">
-            
-            <ul>
-              <h3>product</h3>
-                <li>kigori</li>
-                <li>biryani</li>
-                <li>tiland</li>
-                <li>pakstani</li>
-            </ul>
+        <div className="topfooter">
+           <div className="logfooter">
+               <img src={logoimage} alt="" />
            </div>
-           <div className="linkss">
-            
-            <ul>
-               <h3>useful links</h3>
-               <li>your account</li>
-                <li>become an <br />filliate</li>
-                <li>shipping late</li>
-                <li>help</li>
-            </ul>
+           <div className="somelink">
+              <h2>USEFUL LINKS</h2>
+              <Link to="/" className="linkbotom">Wellcome</Link>
+              <Link to="/about" className="linkbotom">About-us</Link>
+              <Link to="/product" className="linkbotom">Product</Link>
+              <Link to="/impact" className="linkbotom">Impact</Link>
            </div>
-
-           <div className="footerlink">
-         <ul>
-         <h3 className="contact">contact</h3> 
-         <i className='bx bx-home-alt-2'>&nbsp;<span>kigali</span></i><br />
-         <i className='bx bxl-gmail'>&nbsp;<span>info@gmail.com</span></i><br />
-         <i className='bx bx-mobile-vibration'>&nbsp;<span>(+250)798080801</span></i><br />
-         <i className='bx bx-phone'>&nbsp;<span>(+250)0783531566</span></i>
-         </ul>
+           <div className="contact">
+            <h2>CONTACT</h2>
+            <p><BungalowIcon/>  Kabarore</p>
+            <p><MarkEmailUnreadIcon/>Gatsibo.agri@rwa.com</p>
+            <p><EdgesensorHighIcon/>  (+250)783801966</p>
            </div>
         </div>
-
-        
-        <div className="bottom">
-          <div className="coppy">
-           <h6> &copy; 2023 coppyright rwangingo rice farmer.com</h6>
-          </div>
-          <div className="cont">
-          <i className='bx bxl-facebook'></i>
-          <i className='bx bxl-google-plus'></i>
-          <i className='bx bxl-linkedin'></i>
-          </div>
+        <div className="footbotom">
+           <h1>&copy; 2024 Coppyright Agriculture in Gatsibo.com</h1>
+           <div className="icons">
+             <MailOutlineIcon/>
+             <FacebookIcon/>
+           </div>
         </div>
       </div>
         </>

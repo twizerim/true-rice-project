@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import axios from 'axios';
 
 function Signup() {
-  const [formData,setformData]=useState({firstname:"",lastname:"",email:"",district:"",phonenumber:"",password:"",confrimpassword:""})
+  const [formData,setformData]=useState({firstname:"",lastname:"",email:"",district:"",phoneNumber:"",password:"",confrimpassword:""})
 
   const HandleInputcontact = (e) =>{
       setformData({
@@ -12,15 +12,14 @@ function Signup() {
   
   const Handlecontact = async (e) =>{
       e.preventDefault();
-
-
       try {
-      const api = "http://localhost:3000/groupe/user";
+      const api = "http://localhost:3030/api/v1/user/signup";
        const response = await axios.post(api, formData, {
       headers: {
         'Content-Type': 'application/json'
       }
     });
+    console.log(response.data)
     alert(response.data.message)
           
       } catch (error) {
@@ -55,8 +54,8 @@ function Signup() {
            </div>
             
            <div className="fild">
-             <label htmlFor="phonenumber">Phone Number
-               <input type="string"  name="phonenumber" onChange={HandleInputcontact} id='phonenumber' value={formData.phonenumber}/>
+             <label htmlFor="phoneNumber">Phone Number
+               <input type="string"  name="phoneNumber" onChange={HandleInputcontact} id='phoneNmber' value={formData.phoneNumber}/>
              </label>
              <span id='error'></span>
            </div>

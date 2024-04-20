@@ -40,7 +40,7 @@ function Singleproduct() {
           </div>
           <div className="description">
             <h1>The name of the product</h1>
-            <h2>title of product</h2>
+            <h2>Title of product</h2>
             <h3>Price : {price} Rwf</h3>
             <p>Quantity available: <span>599999</span> Kg</p>
             <span>It's better to buy this product because it supports your body</span>

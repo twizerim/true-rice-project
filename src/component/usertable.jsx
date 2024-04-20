@@ -10,8 +10,9 @@ function Usertable() {
     useEffect(()=>{
         const fetchData= async ()=>{
            try {
-            const response = await axios.get("http://localhost:3000/groupe/user/get")
+            const response = await axios.get("http://localhost:3030/api/v1/user/get")
             setUserData(response.data)
+            
 
            } catch (error) {
             console.log(error)
@@ -20,7 +21,7 @@ function Usertable() {
         fetchData([])
         
     })
-    // console.log(userdata)
+    console.log(userdata)
     
   return (
     <>

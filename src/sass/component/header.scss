@@ -36,9 +36,9 @@
       justify-content: center;
       align-items: center;
       gap: 1rem;
-      padding:  0.2rem 3rem;
+      padding:  0.5rem 3rem;
       border-radius: 0.5rem;
-      background-color: rgb(38, 145, 11);
+      background-color: rgb(26, 94, 9);
       font-weight: bold;
       font-size: 1.4rem;
       color: #fff;
@@ -46,7 +46,7 @@
       outline: none;
 
       &:hover{
-        background-color: rgb(53, 239, 7);
+        background-color: rgba(26, 94, 9, 0.755);
       }
    }
    @media(max-width:402px){

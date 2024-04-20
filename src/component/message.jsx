@@ -8,9 +8,9 @@ function Message(){
     useEffect(() => {
        const fetchData = async () => {
           try {
-             const response = await axios.get("http://localhost:3030/groupe/contact-us/get");
+             const response = await axios.get("http://localhost:3030/api/v1/contact/get");
              setUserData(response.data);
-             
+             alert(response.data.message)
           } catch (error) {
              console.error("Error fetching data:", error);
           }
@@ -18,6 +18,7 @@ function Message(){
  
        fetchData(); 
     }, []);
+    console.log(userdata)
 
     return (
         <>

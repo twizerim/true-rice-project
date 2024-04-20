@@ -1,14 +1,11 @@
 import React,{useState} from "react";
-import tuiter from "../assets/image/twiter.png"
-import watap from "../assets/image/whatapp.png"
-import email from "../assets/image/email.png"
-import facebook from "../assets/image/facebooob.png"
+
 import axios from "axios"
 
 
 
 export default function Contact(){
-    const [formData,setformData]=useState({firstname:"",email:"",phone:"",message:""})
+    const [formData,setformData]=useState({fullname:"",email:"",phone:"",message:""})
 
     const HandleInputcontact = (e) =>{
         setformData({
@@ -21,7 +18,7 @@ export default function Contact(){
 
 
         try {
-        const api = "http://localhost:3000/groupe/contact-us";
+        const api = "http://localhost:3030/api/v1/contact/send";
          const response = await axios.post(api, formData, {
         headers: {
           'Content-Type': 'application/json'
@@ -51,8 +48,8 @@ export default function Contact(){
                     <form action="" onSubmit={Handlecontact}>
                         <h1>Complete The Form Below...</h1>
                         <div className="field">
-                            <label htmlFor="firstname">
-                                <input type="text" name="firstname" onChange={HandleInputcontact} value={formData.firstname} placeholder="Type your first name"/>
+                            <label htmlFor="fullname">
+                                <input type="text" name="fullname" onChange={HandleInputcontact} value={formData.fullname} placeholder="Type your first name"/>
                             </label>
                         </div>
                         <div className="field">

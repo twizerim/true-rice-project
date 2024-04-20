@@ -21,6 +21,7 @@
           .par{
             padding: 2rem 1rem;
             width: 40%;
+            padding-top: 4rem;
 
             @media(max-width:889px){
                 h3{
@@ -29,14 +30,15 @@
             }
 
             p{
-                font-size: 1.4rem;
+                font-size: 1.1rem;
                 font-family:'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
                 font-weight: 800;
-                color: #4b6a9b;
+                color: #1a1436;
             }
             @media(max-width:908px){
                 p{
-                    font-size: 1rem; 
+                    font-size: 0.5rem;
+                    color: #1a1436; 
                 }
             }
             .lines{
@@ -45,10 +47,10 @@
                 align-items: center;
 
                 p{
-                    color: red;
+                    color: rgb(11, 84, 49);
                 }
                 span{
-                    color: #4b6a9b;
+                    color: #1a1436;
                 }
             }
 
