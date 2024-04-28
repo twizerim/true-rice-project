@@ -1,0 +1,28 @@
+
+.postproduct{
+    width: 600px;
+
+   
+}
+.division{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    label input,label textarea{
+        width: 350px;
+        border-right: none;
+        border-bottom: 1px solid green;
+        border-top: none;
+        border-left: none;
+        outline: none;
+        color: green;
+        font-weight: 700;
+        font-size: 1.3rem;
+        
+    }
+    .label{
+        color: green;
+        font-weight: 300;
+    }
+}

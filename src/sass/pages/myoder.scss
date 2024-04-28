@@ -3,27 +3,39 @@
     flex-direction: column;
     padding: 2rem;
 
-    .oderflex{
-        border: 2px solid green;
-        display: flex;
-        flex-direction: column;
-
-        .heading{
+    table {
+        border-collapse: collapse;
+        // border: 1px solid black;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+      }
+      
+      table, th, td {
+        border-bottom: 1px solid rgba(22, 64, 33, 0.997);
+        padding: 0.7rem;
+        font-size: 1.5rem;
+      }
+      
+      tr {
+        border: none;
+      }
+      td{
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 1rem;
+        
+        p{
             display: flex;
-            justify-content: space-around;
+            gap: 2rem;
             align-items: center;
-            background-color: green;
-
-            h1{
-                color: aliceblue;
-            }
+            font-size: 1.3rem;
+            font-weight: 600;
         }
-
-        .oder{
-            display: flex;
-            justify-content: space-around;
-            align-items: center; 
-            border-bottom: 1px solid green;
-        }
-    }
+      }
+      th{
+        background-color: rgba(22, 64, 33, 0.997);
+        color: #fff;
+        border-top-left-radius: 1.4rem;
+        border-top-right-radius: 1.4rem;
+      }
 }

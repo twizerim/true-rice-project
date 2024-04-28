@@ -29,20 +29,28 @@ function Usertable() {
         <div className="navtable">
           <h2>All users visit and use our website</h2>
         </div>
-        <div className="defferentperson">
-        {userdata && userdata.datas && userdata.datas.map((item, index) => (
-                 <div className="oneperson">
-                 <div className="li">{index+1}
-                   <p>{item.firstname}</p>
-                 </div>
-                 <div className="changes">
-                   <span>{item.role}</span>
-                   <EditOutlined className="edit" />
-                   <DeleteOutlined className="delete" />
-                 </div>
-               </div>
-            ))}
-        </div>
+        <table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+  </tr>
+  <tr>
+    <td>Row 1, Col 1</td>
+    <td>Row 1, Col 2</td>
+    <td>Row 1, Col 3</td>
+  </tr>
+  <tr>
+    <td>Row 2, Col 1</td>
+    <td>Row 2, Col 2</td>
+    <td>Row 2, Col 3</td>
+  </tr>
+  <tr>
+    <td>Row 3, Col 1</td>
+    <td>Row 3, Col 2</td>
+    <td>Row 3, Col 3</td>
+  </tr>
+</table>
       </div>
     </>
   );

@@ -22,7 +22,7 @@ function Message(){
 
     return (
         <>
-           <div className="message-contaner">
+           {/* <div className="message-contaner">
            {userdata && userdata.datas && userdata.datas.map((item, index) => (
                <div className="message" key={index}>
                    <h2>{item.sendAt}</h2>
@@ -30,6 +30,36 @@ function Message(){
                    <span>{item.message}</span>
                </div>
                ))}
+           </div> */}
+
+         <div className="message-contaner">
+               <div className="message" >
+                   <h2>names</h2>
+                   <p>data</p>
+                   <span>
+                   In your React Native code snippet, you're attempting to handle user login using the Appwrite SDK. However, 
+                   you're encountering an error where a session already exists for the user. This is indicated by the 
+                   user_session_already_exists error type in the AppwriteException.  
+                </span>
+               </div>
+               <div className="message" >
+                   <h2>names</h2>
+                   <p>data</p>
+                   <span>
+                   In your React Native code snippet, you're attempting to handle user login using the Appwrite SDK. However, 
+                   you're encountering an error where a session already exists for the user. This is indicated by the 
+                   user_session_already_exists error type in the AppwriteException.  
+                </span>
+               </div>
+               <div className="message" >
+                   <h2>names</h2>
+                   <p>data</p>
+                   <span>
+                   In your React Native code snippet, you're attempting to handle user login using the Appwrite SDK. However, 
+                   you're encountering an error where a session already exists for the user. This is indicated by the 
+                   user_session_already_exists error type in the AppwriteException.  
+                </span>
+               </div>
            </div>
            
         </>
