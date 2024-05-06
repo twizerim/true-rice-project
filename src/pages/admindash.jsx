@@ -11,6 +11,8 @@ import Diversity1Icon from '@mui/icons-material/Diversity1';
 import DiningIcon from '@mui/icons-material/Dining';
 import Postproduct from "../component/postproduct"
 import logoimage from "../assets/agri-log.png"
+import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
+import Didyou from "../component/didyouknow"
 
 
 function Admindashboard(){
@@ -19,23 +21,27 @@ function Admindashboard(){
     const [mess,setmess]=useState(true)
     const [user,setuser]=useState(false)
     const [product,setproduct]=useState(false)
+    const [didyou,setDidyou]=useState(false)
 
 
     const Messages = () =>{
         setmess(false)
         setuser(true)
         setproduct(false)
+        setDidyou(false)
     }
     const Users = () =>{
         setmess(true)
         setuser(false)
         setproduct(false)
+        setDidyou(false)
     }
     const Product = () =>{
         
         setmess(false)
         setuser(false)
         setproduct(true)
+        setDidyou(false)
     }
     
     const buttonhide = () =>{
@@ -45,8 +51,13 @@ function Admindashboard(){
     }  
     const buttonshower = () =>{
         setshowNav(true)
-        setmenu(false)
-        
+        setmenu(false)   
+    }
+    const didyouknow = () =>{
+        setDidyou(true)
+        setmess(false)
+        setuser(false)
+        setproduct(false)
     }
     return (
         <>
@@ -68,6 +79,7 @@ function Admindashboard(){
                        <li><SmsFailedIcon/><a href="#" onClick={Messages}>Messgage</a></li>
                        <li><AddShoppingCartIcon/><a href="/oder">New oder</a></li>
                        <li><ChildFriendlyIcon/> <a href="/farmerpanel">Production</a></li>
+                       <li><CircleNotificationsIcon/><a href="#" onClick={didyouknow}>Did you know</a></li>
                    </div>
                </div>
                 )}
@@ -92,6 +104,13 @@ function Admindashboard(){
                         <Message/>
                     </div>)}
                     {product && (<Postproduct/>)}
+                     
+                     {didyou && (
+                          <div className="didyou">
+                          <Didyou/>
+                          </div>
+                     )}
+                    
                 </div>
             </div>
         </div>

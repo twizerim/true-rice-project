@@ -13,13 +13,6 @@ const Productpage = () =>{
         <h1>This is the product availabe to buy</h1>
         <div className="product-container">
           <CustomCard/>
-          <CustomCard/>
-          <CustomCard/>
-          <CustomCard/>
-          <CustomCard/>
-          <CustomCard/>
-          <CustomCard/>
-          <CustomCard/>
         </div>
          <Footer/>
         </>

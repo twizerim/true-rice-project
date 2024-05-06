@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import '../sass/main.scss';
 import Navbar from '../component/header';
@@ -7,27 +7,63 @@ import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import HouseSidingSharpIcon from '@mui/icons-material/HouseSidingSharp';
-
+import axios from 'axios';
 
 function Singleproduct() {
   const [count, setCount] = useState(0);
+  const [productdata,setProductData]=useState("")
 
-  let available = 599999
-  const [qontity,setQuontity] = useState(available)
-  let price = 200;
-  let totalPrice = price * count;
-  
+
+  useEffect(() => {
+
+    const idParams = window.location.href.split("?id=")[1];
+    const isValidObjectId = /^[0-9a-fA-F]{24}$/.test(idParams); 
+
+    if (!isValidObjectId) {
+      console.error('Invalid ObjectId');
+
+      return;
+    }
+
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3030/api/v1/product/get/${idParams}`);
+        setProductData(response.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  console.log(productdata); 
+
+  let qontitys = productdata?.data?.quontity; 
+  let prices = productdata?.data?.price;
+
+  const [qontity,setQuontity] = useState(qontitys)
+  let totalPrice = prices * count;
+
+  if (!productdata) {
+    return <div>Loading...</div>;
+  }
 
   const handleplus = () => {
-    setCount(count + 1);
-    setQuontity(qontity -1)
+    if (qontity > 0) {
+      setCount(count + 1);
+      setQuontity(qontity - 1); 
+    }
   };
 
   const handleminus = () => {
-    setCount(count - 1);
-    setQuontity(qontity +1)
+    if (count > 0) {
+      setCount(count - 1);
+      setQuontity(qontity + 1); 
+    }
   
   };
+
 
   return (
     <>
@@ -46,44 +82,43 @@ function Singleproduct() {
             </div>
           </div>
           <div className="description">
-            <h1>The name of the product</h1>
-            <h2>Title of product</h2>
-            <h3>Price : {price} Rwf</h3>
-            <p>Quantity available: <span>{qontity}</span> Kg</p>
-            <span>It's better to buy this product because it supports your body</span>
+            <h1>TITLE: {productdata.data.title}</h1>
+            <h2>NAME: {productdata.data.name}</h2>
+            <h3>Price : {prices} Rwf</h3>
+            <p>Quantity available: <span>{qontitys}</span> Kg</p>
+            <span>{productdata.data.definition}</span>
             <h5 className="cost">Total cost: <span>{totalPrice} Rwf</span></h5>
           </div>
         </div>
          <div className="oder-now">
-           <h1>Oder now , complete here</h1>
             <form action="">
                <div className="division">
-                <label htmlFor="">Full name
+                <label htmlFor="">Full name:
                    <input type="text" />
                 </label>
                </div>
                <div className="division">
-                <label htmlFor="">Phone number
+                <label htmlFor="">Phone number:
                    <input type="text" />
                 </label>
                </div>
                <div className="division">
-                <label htmlFor="">Location where you want to delive product
+                <label htmlFor="">Location where you want to delive product:
                    <input type="text" />
                 </label>
                </div>
                <div className="division">
-                <label htmlFor="">Quantitiea you need
+                <label htmlFor="">Quantitiea you need:
                    <input type="text" value={count} />
                 </label>
                </div>
                <div className="division">
-                <label htmlFor="">Const
+                <label htmlFor="">Const:
                    <input type="text" value={totalPrice}/>
                 </label>
                </div>
                <div className="division">
-                <label htmlFor="">Other information
+                <label htmlFor="">Other information:
                    <textarea name="" id="" cols="" rows="3"></textarea>
                 </label>
                </div>
